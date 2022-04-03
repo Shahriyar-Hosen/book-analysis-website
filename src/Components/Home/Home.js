@@ -38,6 +38,19 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className="mt-60 mb-32 px-4 py-2 mx-auto max-w-7xl">
+        <h1 className="mb-4 text-3xl font-serif font-extrabold leading-tight tracking-tight text-center text-[#100b58] md:text-3xl">
+          Customer Review
+        </h1>
+          <div  className="flex justify-center items-center">
+            <Link
+              to="home"
+              className=" mb-2 py-1 px-20 rounded-lg text-[#070252] hover:text-white font-bold font-serif mt-3 bg-cyan-300 hover:bg-blue-700 sm:w-auto sm:mb-0 text-xl"
+            >
+              See All Reviews
+            </Link>
+          </div>
+      </section>
     </main>
   );
 };

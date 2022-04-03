@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "img": "https://lh3.googleusercontent.com/a-/AOh14Gi6GEhrU3O0OmDc66B-VAKc2kz74dMW5oVTNTjl=s64-w32-h32-cc",
+    "name": "Abraham Imole Pelumi",
+    "review": "Angela Duckworth is my favourite author. She is not only great at public speaking, she's equally excellent at writing. I love her personality, I love her style, I love how she shares her research with us to benefit our lives. I got to know her through her talk at TED, and I'm glad I did meet her.",
+    "ratting": 5
+  },
+  {
+    "id": 2,
+    "img": "https://lh3.googleusercontent.com/a-/AOh14Gg9ln5bf7VQ1Xprg-ipZiOvW7EfO2RfZVC4DXGS4A=s64-w32-h32-cc",
+    "name": "Warren Gareth",
+    "review": "The subject matter is well researched and easily explained. It has restored the confidence in myself to push forward and keep working on my goals.",
+    "ratting": 5
+  },
+  {
+    "id": 3,
+    "img": "https://lh3.googleusercontent.com/a-/AOh14GgF3fLkKM07R4GfU_PG4FVO6-ITCFRnARqZnGtwrtg=s64-w32-h32-cc",
+    "name": "Yashraj Sharma",
+    "review": "Good book. Gives you ample reason to establish why good old traits like grit, persistence and perseverance are so much more important than talent to be successful in any field. Last few pages were a bit stretched I thought, but definitely worth a place in your bookshelf.",
+    "ratting": 4
+  },
+  {
+    "id": 4,
+    "img": "https://lh3.googleusercontent.com/a-/AOh14GjhRHbCEZa5j8P91T8j_8XoyvQPcR_pu7pGTDTZXA=s64-w32-h32-cc",
+    "name": "Dhananjay Anoop",
+    "review": "It's very good book one can read and practice for shaping life and personality of difference. Authors narrating expertise to convey everything naturally is extra- ordinary.",
+    "ratting": 5
+  },
+  {
+    "id": 5,
+    "img": "https://lh3.googleusercontent.com/a-/AOh14GhoRbYbMCWQXPDOPNB4j2RN1j0JF7YK4luClEDjfA=s64-w32-h32-cc",
+    "review": "It starts well but soon the same concept keeps repeating with different examples. At various point it look like author is unconciously self praising. I have given up in first three chapters.",
+    "ratting": 1
+  },
+  {
+    "id": 6,
+    "img": "https://lh3.googleusercontent.com/a-/AOh14GgkuGE63X_i32MF7Pl45GC-c06M6tY6zwd9766EwQ=s64-w32-h32-cc",
+    "name": "Matt Kepple",
+    "review": "Grit is a good principle but the book feels repetitive and I didn't have the grit to finish it.",
+    "ratting": 2
+  }
+]

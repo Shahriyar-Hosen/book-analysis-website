@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Review from "../Review/Review";
 
 const Home = () => {
+  const [reviews, setReviews] = useState([]);
+  useEffect(() => {
+    fetch("reviews.json")
+      .then((res) => res.json())
+      .then((data) => setReviews(data));
+  }, []);
+
   return (
     <main>
-      <section className="px-4 py-2 mx-auto max-w-7xl">
+      <section className="px-4 py-5 mx-auto max-w-7xl">
         <div className="grid items-center w-full grid-cols-1 gap-10 mx-auto md:w-4/5 lg:grid-cols-2 xl:gap-32">
           <div>
             <h1 className="mb-4 text-3xl font-serif font-extrabold leading-tight tracking-tight text-left text-[#060144] md:text-3xl">
@@ -12,7 +20,7 @@ const Home = () => {
               <br />
               <span>Passion and Perseverance</span>
             </h1>
-            <p className="mb-5 text-base text-left text-gray-800 md:text-xl">
+            <p className="mb-5 text-base text-left text-gray-800 md:text-xl font-serif">
               In this must-read book for anyone striving to succeed, pioneering
               psychologist Angela Duckworth shows parents, educators, students,
               and business people both seasoned and new that the secret to
@@ -22,7 +30,7 @@ const Home = () => {
             <div className="mt-14">
               <Link
                 to="/contact"
-                className="w-full mb-2 py-2 px-16  text-[#060144] text-xl mt-3 bg-cyan-200 hover:bg-cyan-400 hover:text-white  rounded-md sm:w-auto sm:mb-0"
+                className="w-full mb-2 py-2 px-16  text-[#060144] text-xl mt-3 bg-cyan-200 hover:bg-cyan-400 hover:text-white  rounded-md sm:w-auto sm:mb-0 font-serif"
               >
                 Reviews
               </Link>
@@ -38,18 +46,23 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="mt-60 mb-32 px-4 py-2 mx-auto max-w-7xl">
-        <h1 className="mb-4 text-3xl font-serif font-extrabold leading-tight tracking-tight text-center text-[#100b58] md:text-3xl">
-          Customer Review
+      <section className="mt-40 mb-32 px-4 py-2 mx-auto max-w-7xl">
+        <h1 className="mb-4 text-3xl font-serif font-extrabold leading-tight tracking-tight text-center text-[#100b58] md:text-5xl">
+          Customer Reviews
         </h1>
-          <div  className="flex justify-center items-center">
-            <Link
-              to="home"
-              className=" mb-2 py-1 px-20 rounded-lg text-[#070252] hover:text-white font-bold font-serif mt-3 bg-cyan-300 hover:bg-blue-700 sm:w-auto sm:mb-0 text-xl"
-            >
-              See All Reviews
-            </Link>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-20 my-10">
+          {reviews.slice(0, 3).map((review) => (
+            <Review key={review.id} review={review} />
+          ))}
+        </div>
+        <div className="flex justify-center items-center">
+          <Link
+            to="home"
+            className=" mb-2 py-1 px-20 rounded-lg text-[#070252] hover:text-white font-bold font-serif mt-3 bg-cyan-300 hover:bg-blue-700 sm:w-auto sm:mb-0 text-xl"
+          >
+            See All Reviews
+          </Link>
+        </div>
       </section>
     </main>
   );

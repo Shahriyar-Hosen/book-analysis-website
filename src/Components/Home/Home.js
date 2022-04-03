@@ -1,14 +1,9 @@
-import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import useReviews from "../../hook/useReviews";
 import Review from "../Review/Review";
 
 const Home = () => {
-  const [reviews, setReviews] = useState([]);
-  useEffect(() => {
-    fetch("reviews.json")
-      .then((res) => res.json())
-      .then((data) => setReviews(data));
-  }, []);
+  const [reviews] = useReviews()
 
   return (
     <main>
@@ -27,10 +22,10 @@ const Home = () => {
               outstanding achievement is not talent but a focused persistence
               called grit.
             </p>
-            <div className="mt-14">
+            <div className="mt-10 mb-5 md:mt-24 flex justify-center md:justify-start items-center">
               <Link
-                to="/contact"
-                className="w-full mb-2 py-2 px-16  text-[#060144] text-xl mt-3 bg-cyan-200 hover:bg-cyan-400 hover:text-white  rounded-md sm:w-auto sm:mb-0 font-serif"
+                to="/reviews"
+                className="py-2 px-16  text-[#060144] text-xl bg-cyan-200 hover:bg-cyan-400 hover:text-white  rounded-md sm:w-auto sm:mb-0 font-serif "
               >
                 Reviews
               </Link>
@@ -57,8 +52,8 @@ const Home = () => {
         </div>
         <div className="flex justify-center items-center">
           <Link
-            to="home"
-            className=" mb-2 py-1 px-20 rounded-lg text-[#070252] hover:text-white font-bold font-serif mt-3 bg-cyan-300 hover:bg-blue-700 sm:w-auto sm:mb-0 text-xl"
+            to="/reviews"
+            className=" mb-2 py-1 px-20 rounded-lg font-bold font-serif mt-3 sm:w-auto sm:mb-0 text-[#060144] text-xl bg-cyan-200 hover:bg-cyan-400 hover:text-white"
           >
             See All Reviews
           </Link>

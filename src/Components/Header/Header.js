@@ -6,19 +6,19 @@ const Header = () => {
     <div>
       <div className="sticky top-0 bg-blue-200 px-12 py-8 flex justify-center">
         <div className="flex gap-4 text-xl">
-          <Link className="border-b-2 border-blue-800 text-blue-900" to="/home">
+          <Link className="border-b-2 border-blue-900 text-blue-900" to="/home">
             Home
           </Link>
-          <Link className="border-b-2 border-blue-800 text-blue-900" to="/reviews">
+          <Link className="border-b-2 border-blue-900 text-blue-900" to="/reviews">
             Reviews
           </Link>
-          <Link className="border-b-2 border-blue-800 text-blue-900" to="/dashboard">
+          <Link className="border-b-2 border-blue-900 text-blue-900" to="/dashboard">
             Dashboard
           </Link>
-          <Link className="border-b-2 border-blue-800 text-blue-900" to="/blogs">
+          <Link className="border-b-2 border-blue-900 text-blue-900" to="/blogs">
             Blogs
           </Link>
-          <Link className="border-b-2 border-blue-800 text-blue-900" to="/about">
+          <Link className="border-b-2 border-blue-900 text-blue-900" to="/about">
             About
           </Link>
         </div>

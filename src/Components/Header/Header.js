@@ -1,26 +1,26 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import CustomLink from "../CustomLink/CustomLink";
 
 const Header = () => {
   return (
     <div>
-      <div className="sticky top-0 bg-blue-200 px-12 py-8 flex justify-center">
+      <div className="sticky top-0 bg-blue-100 px-12 py-8 flex justify-center">
         <div className="flex gap-4 text-xl">
-          <Link className="border-b-2 border-blue-900 text-blue-900" to="/home">
+          <CustomLink className="font-serif font-bold" to="/home">
             Home
-          </Link>
-          <Link className="border-b-2 border-blue-900 text-blue-900" to="/reviews">
+          </CustomLink>
+          <CustomLink className="font-serif font-bold" to="/reviews">
             Reviews
-          </Link>
-          <Link className="border-b-2 border-blue-900 text-blue-900" to="/dashboard">
+          </CustomLink>
+          <CustomLink className="font-serif font-bold" to="/dashboard">
             Dashboard
-          </Link>
-          <Link className="border-b-2 border-blue-900 text-blue-900" to="/blogs">
+          </CustomLink>
+          <CustomLink className="font-serif font-bold" to="/blogs">
             Blogs
-          </Link>
-          <Link className="border-b-2 border-blue-900 text-blue-900" to="/about">
+          </CustomLink>
+          <CustomLink className="font-serif font-bold" to="/about">
             About
-          </Link>
+          </CustomLink>
         </div>
       </div>
     </div>

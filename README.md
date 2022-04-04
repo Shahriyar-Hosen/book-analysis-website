@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Book Analysis Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project [Live site link](https://book-analysis-website.netlify.app/).
 
 ## Available Scripts
 

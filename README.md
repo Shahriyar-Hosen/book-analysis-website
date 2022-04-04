@@ -1,10 +1,9 @@
 # Book Analysis Website
 
-This project [Live site link](https://book-analysis-website.netlify.app/).
+This is a book review website.
+**This project** [Live site link](https://book-analysis-website.netlify.app/).
 
 ## Project Details
-
-This is a book review website.
 
 ### `Review of Grit:` The Power of Passion and Perseverance
 

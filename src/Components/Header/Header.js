@@ -6,7 +6,7 @@ const Header = () => {
     <div>
       <div className="sticky top-0 bg-blue-100 px-12 py-8 flex justify-center">
         <div className="flex gap-4 text-xl">
-          <CustomLink className="font-serif font-bold" to="/home">
+          <CustomLink className="font-serif font-bold" to="/">
             Home
           </CustomLink>
           <CustomLink className="font-serif font-bold" to="/reviews">

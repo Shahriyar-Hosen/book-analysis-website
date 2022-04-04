@@ -9,7 +9,7 @@ const Home = () => {
     <main>
       <section className="px-4 py-5 mx-auto max-w-7xl">
         <div className="grid items-center w-full grid-cols-1 gap-10 mx-auto md:w-4/5 lg:grid-cols-2 xl:gap-32">
-          <div>
+          <div className="order-2 md:order-1">
             <h1 className="mb-4 text-3xl font-serif font-extrabold leading-tight tracking-tight text-left text-[#060144] md:text-3xl">
               <span>Review of Grit: The Power of</span>
               <br />
@@ -31,7 +31,7 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div>
+          <div className="order-1 md:order-2">
             <div className="w-full h-full bg-gray-200 rounded-lg">
               <img
                 src="https://i.pinimg.com/originals/6a/03/93/6a03930c7cdf234d2e5ae5d05578076d.jpg"
